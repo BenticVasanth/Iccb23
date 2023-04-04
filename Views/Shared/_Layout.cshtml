@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="../../Content/assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../../Content/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Content/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Content/assets/css/flaticon.css">
+    <link rel="stylesheet" href="../../Content/assets/css/slicknav.css">
+    <link rel="stylesheet" href="../../Content/assets/css/animate.min.css">
+    <link rel="stylesheet" href="../../Content/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../../Content/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../Content/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../../Content/assets/css/slick.css">
+    <link rel="stylesheet" href="../../Content/assets/css/nice-select.css">
+    <link rel="stylesheet" href="../../Content/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+
+    <!-- Preloader Start -->
+    @* <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img style="width: 300px; height: 250px;" src="assets/img/logo/logo_t.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <!-- Preloader Start -->
+
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparrent" id="headerMenu">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-2 pl-50">
+                            <div class="text-right">
+                                <a href="index.html">
+                                    <img style="width: 70px; height: auto; margin: 5px" src="~/Content/assets/img/logo/IIT_Madras_Logo.svg.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                                        <li><a href="@Url.Action("Index", "About")">About</a></li>
+                                        <li><a href="@Url.Action("Index", "Org")">Oranizing Committee</a></li>
+                                        <li><a href="@Url.Action("Index", "Speakers")">Speakers</a></li>
+                                        <li><a href="@Url.Action("Index", "Registration")">Registration</a></li>
+                                        <li><a href="@Url.Action("Index", "Travel")">Travel And Accommodation</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <div id="body">
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-main">
+            <div class="footer-area footer-padding" style="background: #f8f7f7">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-4 col-sm-8 my-auto text-center">
+                            <div class="single-footer-caption">
+                                <!-- logo -->
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img style="width: 250px; height: auto" src="~/Content/assets/img/logo/iccb3.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li class="active">
+                                            <router-link to="/">Home</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/about">About</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/speakers">Speakers</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/reg">Registration</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/contact">Contact us</router-link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Quick Links</h4>
+                                    <ul>
+                                        <li><a href="#">Brochure</a></li>
+                                        <li><a href="#">Program</a></li>
+                                        <li>
+                                            <router-link to="/org">Oranizing Committee</router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/travel">Travel And Accommodation</router-link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Contact Us</h4>
+                                    <ul>
+                                        <li>Dr. S. Mahalingam</li>
+                                        <li>Secretariat</li>
+                                        <li>Email: mahalingam@iitm.ac.in</li>
+                                        <li>Phone: +91-44-2257-4130</li>
+                                    </ul>
+                                    <br>
+                                    <ul>
+                                        <li>Secretary, ICCB23</li>
+                                        <li>Email: iccb23@wmail.iitm.ac.in </li>
+                                        <li>Phone: +91-044-22575108 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copy-Right -->
+                    <div class="row align-items-center text-center">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right">
+                                <p>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                All rights reserved | IITM Chennai
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+    <style>
+        html {
+            width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <!-- JS here -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById("headerMenu");
+            var scroll = window.pageYOffset;
+            if (scroll > 10) {
+                header.classList.remove("stickyRemove");
+                header.classList.add("stickyAdd");
+            } else {
+                header.classList.remove("stickyAdd");
+                header.classList.add("stickyRemove");
+            }
+        });
+    </script>
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="../../Content/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../../Content/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../Content/assets/js/popper.min.js"></script>
+    <script src="../../Content/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="../../Content/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="../../Content/assets/js/owl.carousel.min.js"></script>
+    <script src="Content/assets/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="../../Content/assets/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="../../Content/assets/js/wow.min.js"></script>
+    <script src="../../Content/assets/js/animated.headline.js"></script>
+    <script src="Content/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="../../Content/assets/js/jquery.scrollUp.min.js"></script>
+    <script src="../../Content/assets/js/jquery.nice-select.min.js"></script>
+    <script src="../../Content/assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="../../Content/assets/js/contact.js"></script>
+    <script src="../../Content/assets/js/jquery.form.js"></script>
+    <script src="../../Content/assets/js/jquery.validate.min.js"></script>
+    <script src="../../Content/assets/js/mail-script.js"></script>
+    <script src="../../Content/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../../Content/assets/js/plugins.js"></script>
+    <script src="../../Content/assets/js/main.js"></script>
+
+</body>
+</html>
